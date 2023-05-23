@@ -47,7 +47,7 @@ async def BotzHub():
                     "**NTM BOTS STATS.**\n\n`PERFORMING A PERIODIC CHECK ✅...`",
                 )
             c = 0
-            edit_text = "**NTM BOTS STATS.**\n\n**ALL BOTS ARE DEVELOPED BY @TG_LATHEESH**"
+            edit_text = "**NTM BOTS STATS.**\n\n**ALL BOTS ARE DEVELOPED BY @TG_LATHEESH**\n\n"
             for bot in bots:
                 try:
                     logging.info(f"[INFO] checking @{bot}")
