@@ -44,10 +44,10 @@ async def BotzHub():
                 await user_bot.edit_message(
                     int(chnl_id),
                     msg_id,
-                    "**@BotzHub Bots Stats.**\n\n`Performing a periodic check...`",
+                    "**NTM BOTS STATS.**\n\n`PERFORMING A PERIODIC CHECK ✅...`",
                 )
             c = 0
-            edit_text = "**@BotzHub Bots Stats.**\n\n"
+            edit_text = "**NTM BOTS STATS.**\n\n**ALL BOTS ARE DEVELOPED BY @TG_LATHEESH**"
             for bot in bots:
                 try:
                     logging.info(f"[INFO] checking @{bot}")
@@ -87,8 +87,8 @@ async def BotzHub():
             month = dt.now(k).strftime("%B")
             day = dt.now(k).strftime("%d")
             year = dt.now(k).strftime("%Y")
-            t = dt.now(k).strftime("%H:%M:%S")
-            edit_text += f"\n**Last Checked:** \n`{t} - {day} {month} {year} [IST]`\n\n__Bots status are auto-updated every 2 hours__"
+            t = dt.now(k).strftime("%l:%M:%S")
+            edit_text += f"\n**Last Checked:** \n`{t} - {day} {month} {year} [IST]`\n\n__BOTS STATUS ARE AUTOMATICALLY UPDATED FOR EVERY 2 HOURS🤫__"
             await user_bot.edit_message(int(chnl_id), int(msg_id), edit_text)
             logging.info("Checks since last restart - %s", c)
             logging.info("Sleeping for 2 hours.")  # we use workflows here.
